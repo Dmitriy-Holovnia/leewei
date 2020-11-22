@@ -1,0 +1,13 @@
+.about__title {
+  font-family: 'GothamPro';
+  font-size: 2rem;
+}
+
+.about__subtitle {
+  /* text-indent: 20px; */
+  font-weight: 600;
+}
+
+.about__contact_img {
+  height: 16px;
+}

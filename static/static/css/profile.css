@@ -1,0 +1,13 @@
+.profile {}
+
+.profile__nav {}
+
+.profile__nav_active {
+  background-color: hsl(203, 96%, 63%) !important;
+}
+
+.profile__link {
+  color: black;
+  font-family: 'GothamPro';
+  font-size: 1rem;
+}

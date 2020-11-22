@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Leweei Trading{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/information.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1 class="information__title">{{ user.username }}</h1>
+  {% for item in user.courses.all %}
+  <h1 class="information__title">{{ item.name }}</h1>
+  {% for p in item.paragraphs.all %}
+  <h2>{{ p.text }}</h2>
+  {% endfor %}
+  {% endfor %}
+  <br>
+  <br>
+  <p class="text-center information__subtitle">TEST</p>
+</div>
+{% endblock %}

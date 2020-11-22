@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Education {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container about mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-5 mb-3">
+      <h2 class="text-center about__title mb-3">Денис Курносенко</h2>
+      <p class="about__subtitle px-2">Трейдер и инвестор с опытом на криптовалютном и фондовом рынке более 5 лет. Счета на нескольких крупных крипто и фондовых биржах.</p>
+      <p class="about__subtitle px-2">Основатель школы трейдинга «Crypto Travel School». Обучил 600+ учеников.</p>
+      <p class="about__subtitle px-2">Сопровождает начинающих и опытных инвесторов на рынке криптовалюты, акций, сырья и других активов.</p>
+      <p class="about__subtitle px-2">Предоставляет аналитику крупным отечественным и зарубежным компаниям и инвестиционным фондам и банкам, одними из которых являются ICBS bank, CIMB bank.</p>
+      <p class="about__subtitle px-2">Основатель инвестиционного фонда «Crypto Travel School FUND», капитализация которого составляет 6.2 млн $</p>
+      <div class="about__contact d-flex justify-content-center">
+        <a href="https://t.me/Leewei" class="btn">Cвязаться<img class="ml-2 about__contact_img" src="{% static 'img/telegram.svg' %}" alt=""></a>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'img/about/leweei-photo.jpg' %}" alt="" class="img-fluid">
+    </div>
+  </div>
+</div>
+{% endblock %}
