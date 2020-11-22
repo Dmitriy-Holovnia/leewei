@@ -3,5 +3,5 @@ from .models import Profile, Course, CourseParagraph
 
 # Register your models here.
 admin.site.register(Profile)
-admin.site.register(Course)
-admin.site.register(CourseParagraph)
+# admin.site.register(Course)
+# admin.site.register(CourseParagraph)

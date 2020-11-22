@@ -26,7 +26,7 @@ SECRET_KEY = 'jg&57giehjwd8ge3jw7xdjua8gwvo#-h4wy0rma!saxc-=7wp3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['leewei.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
