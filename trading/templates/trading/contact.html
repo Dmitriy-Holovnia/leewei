@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% load input_type %}
+{% load crispy_forms_tags %}
+
+{% block title %}Contact {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container about mt-5">
+  <div class="row justify-content-center">
+
+    <div class="col-md-6 mb-3 mt-5 contact__img">
+      <img src="{% static 'img/contact.jpg'%}" alt="error" class="img-fluid">
+      <p class="contact__subtitle text-center">
+        Также можно связаться через 
+        <a href="https://www.instagram.com/leewei.ru/">Instagram</a>
+         or 
+         <a href="https://t.me/Leewei">Telegram</a>
+      </p>
+    </div>
+
+    <div class="col-md-5 mb-3">
+      <form method="post" class="contact p-4">
+        <h2 class="contact__title text-center">Задай вопрос</h2>
+        {% csrf_token %}
+        <div class="form-group">
+          {% for field in form %}
+          <div class="form-group">
+            <label class="contact__input" for="{{ field.auto_id }}">{{ field.label }}:</label>
+            {{ field|as_crispy_field }}
+          </div>
+          {% endfor %}
+        </div>
+        <div class="contact__submit d-flex justify-content-center">
+          <button type="submit" class="btn">Отправить сообщение</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact__info">
+      <p class="contact__subtitle text-center">
+        Также можно связаться через 
+        <a href="https://www.instagram.com/leewei.ru/">Instagram</a>
+         or 
+         <a href="https://t.me/Leewei">Telegram</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+

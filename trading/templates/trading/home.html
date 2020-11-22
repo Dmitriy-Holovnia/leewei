@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- HOME -->
+<div class="home my-3">
+  <div class="container">
+    <div class="row">
+      <div class="home__info col-sm-5">
+        <div class="jumbotron">
+            <h1 class="display-4 home__title">Leweei Trading</h1>
+            <p class="lead home__text">Основы трейдинга. Научись самостоятельно делать стратегии, анализировать рынок и управлять риском.</p>
+            <a href="{% url 'contact' %}" class="btn mr-2">Связатся</a>
+            {% if not user.is_authenticated %}
+            <a href="{% url 'register' %}" class="btn">Регистрация</a>
+            {% endif %}
+          </div>
+      </div>
+      <img src="{% static 'img/home/bg.svg' %}" alt="" class="home__img col-sm-7">
+    </div>
+  </div>
+</div>
+
+<!-- INFO -->
+<div class="container">
+  <div class="info row my-2">
+    <div class="info__box col-sm text-center m-4">
+      <img class="info__img" src="{% static 'img/home/box1.svg' %}"></img>
+      <h1 class="info__title">Аналитика</h1>
+      <div class="info__text">
+        Аналитика, основанная на личном опыте, без «псевдо-инструментов», которые в реальной жизни больше не работают. Регулярный разбор основных крипто-активов, а также валютных пар.
+      </div>
+    </div>
+
+    <div class="info__box col-sm text-center m-4">
+      <img class="info__img" src="{% static 'img/home/box2.svg' %}"></img>
+      <h1 class="info__title">Аналитика</h1>
+      <div class="info__text">
+        Аналитика, основанная на личном опыте, без «псевдо-инструментов», которые в реальной жизни больше не работают. Регулярный разбор основных крипто-активов, а также валютных пар.
+      </div>
+    </div>
+
+    <div class="info__box col-sm text-center m-4">
+      <img class="info__img" src="{% static 'img/home/box3.svg' %}"></img>
+      <h1 class="info__title">Аналитика</h1>
+      <div class="info__text">
+        Аналитика, основанная на личном опыте, без «псевдо-инструментов», которые в реальной жизни больше не работают. Регулярный разбор основных крипто-активов, а также валютных пар.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- QUOTE -->
+<div class="container my-5">
+  <div class="quote d-flex">
+    <p class="quote__text align-self-center p-5">
+      Идейные соображения высшего порядка, а также реализация намеченных плановых заданий позволяет оценить значение существенных финансовых и административных условий.
+    </p>
+  </div>
+</div>
+
+<!-- EXAMPLE -->
+<div class="container my-3">
+  <div class="example">
+    <h1 class="example__title">Пример трейда</h1>
+    <img src="{% static 'img/home/example-trade.png' %}" alt="example trade" class="example__img img-fluid">
+  </div>
+</div>
+
+
+{% endblock %}

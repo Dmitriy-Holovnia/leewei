@@ -1,0 +1,78 @@
+/* HOME */
+.jumbotron {
+  background-color: transparent;
+}
+.home {
+  background-color: #F4F4F4;
+}
+.home__title {
+  font-family: 'GothamPro';
+  font-size: 2.4rem;
+}
+.home__text {
+  /* text-indent: 20px; */
+}
+.home__img {
+  margin: 0;
+  padding: 0;
+}
+
+/* INFO */
+.info__img {
+  height: 160px;
+  width: auto;
+}
+.info__title {
+  font-size: 22px;
+}
+.info__text {
+  font-size: 14px;
+}
+/* QUOTE */
+.quote {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  min-height: 100px;
+}
+.quote__text {
+  text-align: center;
+}
+
+.example__title {
+  
+}
+/* MEDIA */
+@media (max-width: 992px) {
+  .bg1 {
+    /* background-color: red; */
+  }
+  .home-img {
+    filter: blur(2px);
+  }
+
+  .home-content h1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 5px;
+    display: table;
+  }
+
+  .home-content p {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 5px;
+    display: table;
+  }
+}
+@media (max-width: 768px) {
+  .home__img {
+    display: none;
+  }
+  .jumbotron {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+
+
+}

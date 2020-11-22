@@ -1,0 +1,17 @@
+.course__title {
+  font-size: 1.6rem;
+  font-family: 'GothamPro';
+}
+
+.course__subtitle {
+  font-weight: 600;
+}
+
+.course__price {
+  font-size: 2.5rem;
+  font-family: 'GothamPro';
+}
+
+.course__price_curency {
+  font-size: 1.5rem;
+}

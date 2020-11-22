@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Education {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/courses.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <!-- Course #1 -->
+  <div class="course row mt-4">
+    <div class="col-md course__info">
+      <h3 class="text-center course__title mb-3">Менторство</h3>
+      <div class="d-flex justify-content-center my-2">
+        <ul>
+          <li class="course__subtitle">25 уроков по 1,5 часа в Zoom</li>
+          <li class="course__subtitle">Домашние задания и их проверка</li>
+          <li class="course__subtitle">Дисциплина в трейдинге</li>
+          <li class="course__subtitle">Работа над ошибками</li>
+          <li class="course__subtitle">Мои личные стратегии</li>
+          <li class="course__subtitle">Управление деньгами и рисками</li>
+          <li class="course__subtitle">Углубленный скальпинг</li>
+          <li class="course__subtitle">Частная группа</li>
+          <li class="course__subtitle">Возможность работать со мной</li>
+          <li class="course__subtitle">Тренды 2020 года</li>
+          <li class="course__subtitle">Торговля со мной</li>
+        </ul>
+      </div>
+      <div class="course__buyblock d-flex align-items-start justify-content-center">
+        <h2 class="course__price mx-3">1200<sub class="course__price_curency">$</sub></h2>
+        <a href="#" class="btn">Купить</a>
+      </div>
+    </div>
+
+    <div class="col-md course__content">
+      <img class="img-fluid" src="{% static 'img/courses/education1.jpg' %}" alt="">
+    </div>
+  </div>
+  
+  <!-- Course #2 -->
+  <div class="course row mt-4">
+    <div class="col-md course__info order-md-2">
+      <h3 class="text-center course__title mb-3">Инвестирование 2.0</h3>
+      <div class="d-flex justify-content-center my-2">
+        <ul>
+          <li class="course__subtitle">Фундаментальный анализ</li>
+          <li class="course__subtitle">Новостной анализ</li>
+          <li class="course__subtitle">Риск менеджмент</li>
+          <li class="course__subtitle">Мани менеджмент</li>
+          <li class="course__subtitle">Домашние задания</li>
+          <li class="course__subtitle">Разбор бирж</li>
+          <li class="course__subtitle">Чат для учеников</li>
+        </ul>
+      </div>
+      <div class="course__buyblock d-flex align-items-start justify-content-center">
+        <h2 class="course__price mx-3">300<sub class="course__price_curency">$</sub></h2>
+        <a href="#" class="btn">Купить</a>
+      </div>
+    </div>
+
+    <div class="col-md course__content order-md-1">
+      <img class="img-fluid" src="{% static 'img/courses/education2.jpg' %}" alt="">
+    </div>
+  </div>
+
+  <!-- Course #3 -->
+  <div class="course row mt-4">
+    <div class="col-md course__info">
+      <h3 class="text-center course__title mb-3">Трейдинг 2.0</h3>
+      <div class="d-flex justify-content-center my-2">
+        <ul>
+          <li class="course__subtitle">8 уроков по 1,5 часа в Zoom<li>
+            <li class="course__subtitle">Домашние задания и их проверка</li>
+            <li class="course__subtitle">Дисциплина в трейдинге</li>
+            <li class="course__subtitle">Работа над ошибками</li>
+            <li class="course__subtitle">Стратегии</li>
+            <li class="course__subtitle">Управление деньгами и рисками</li>
+            <li class="course__subtitle">Скальпинг</li>
+          </ul>
+      </div>
+      <div class="course__buyblock d-flex align-items-start justify-content-center">
+        <h2 class="course__price mx-3">250<sub class="course__price_curency">$</sub></h2>
+        <a href="#" class="btn">Купить</a>
+      </div>
+    </div>
+
+    <div class="col-md course__content">
+      <img class="img-fluid" src="{% static 'img/courses/education3.jpg' %}" alt="">
+    </div>
+  </div>
+{% endblock %}

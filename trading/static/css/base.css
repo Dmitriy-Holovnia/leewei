@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro-Black.woff');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+.content {
+	padding-bottom: 90px;
+}
+
+/* HEADER */
+header {
+  background-color: #2B2F49;
+  /* filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2)); */
+}
+.header-logo {
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'GothamPro';
+}
+.header-link {
+  color: white;
+}
+
+.header-link:hover {
+  color: #E8F2FF;
+}
+
+.header-btn {
+  min-width: 150px;
+}
+.navbar-toggler {
+  border: 1px solid gray;
+}
+.navbar-toggler-icon {
+  background-image: url('../img/hamburger.svg');
+  padding: 15px;
+}
+
+
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  background-color: #2B2F49;
+  flex-shrink: 0;
+}
+
+.footer__contacts {
+  height: 65px;
+}
+
+.footer__contacts_box {
+  height: 40px;
+  width: 40px;
+}
+
+
+/* GENERAL */
+.btn {
+  background-color: hsl(203, 96%, 63%);
+  color: white;
+  font-family: 'GothamPro';
+}
+.btn-white {
+  background-color: white;
+  color: hsl(203, 96%, 63%);
+  font-family: 'GothamPro';
+  border: 1px solid hsl(203, 96%, 63%);
+}
+.asteriskField {
+  display: none;
+}
+.btn:hover {
+  color: #e6e6e6;
+}
+
+/* MEDIA */
+@media (max-width: 992px) {
+
+}
